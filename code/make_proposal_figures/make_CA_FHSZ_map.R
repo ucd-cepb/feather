@@ -64,7 +64,7 @@ ras_plot <- ggplot() +
     legend.position= 'inside',
  plot.tag.location = 'margin',
  plot.tag.position = 'bottom',
- plot.tag = element_text(hjust = 0),
+ plot.tag = element_text(hjust = 0,face = 'italic'),
     legend.position.inside = c(0.45,0.65)) + 
   labs(#title = 'FSHZs by responsibility area in California, 2025',
        tag = str_wrap("Figure 5: FSHZs (2025) by local (LRA) and state (SRA) responsibility area in California. Unshaded areas include FRA and LRA/SRA areas not in a FSHZ.",width = 80))
