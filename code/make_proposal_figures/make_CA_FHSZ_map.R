@@ -54,7 +54,7 @@ ras_plot <- ggplot() +
     guide = guide_legend(#reverse = T,
                          nrow = 3)) + 
   theme(
-    text = element_text(family = 'Times'),
+    text = element_text(family = 'Arial'),
   #  plot.title = element_text(size = 12,
   #    margin = margin(b = -10) # Adjust the negative value to decrease space
   #  ),
@@ -64,11 +64,11 @@ ras_plot <- ggplot() +
     legend.position= 'inside',
  plot.tag.location = 'margin',
  plot.tag.position = 'bottom',
- plot.tag = element_text(hjust = 0,face = 'italic'),
+ plot.tag = element_text(hjust = 0,face = 'italic',family = 'Arial'),
     legend.position.inside = c(0.45,0.65)) + 
   labs(#title = 'FSHZs by responsibility area in California, 2025',
        tag = str_wrap("Figure 5: FSHZs (2025) by local (LRA) and state (SRA) responsibility area in California. Unshaded areas include FRA and LRA/SRA areas not in a FSHZ.",width = 80))
-ggsave(plot = ras_plot,filename = 'figures/sra_map_2026.png',dpi = 450,units = 'in',height = 5.5,width = 5)
+ggsave(plot = ras_plot,filename = 'figures/sra_map_2026.png',dpi = 600,units = 'in',height = 5.5,width = 5)
 
  
 plot.margin = unit(rep(0,4), "cm"), 
